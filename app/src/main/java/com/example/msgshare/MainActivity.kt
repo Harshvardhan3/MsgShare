@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val textView = findViewById<TextView>(R.id.tv_hello)
         textView.setOnClickListener {
             startActivity(Intent(this@MainActivity, SecondScreen::class.java).apply {
                 putExtra("Name", "Harsh")
